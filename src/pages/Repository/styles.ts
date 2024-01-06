@@ -14,7 +14,7 @@ export const Content = styled.div`
 `;
 
 export const TreeContainer = styled.div`
-  padding: ${({ theme }) => theme.spacing.md}px;
+  padding: ${({ theme }) => theme.spacing.md}px ${({ theme }) => theme.spacing.mdl}px;
 `;
 
 export const Avatar = styled.img`

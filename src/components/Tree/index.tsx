@@ -4,7 +4,6 @@ import { useTheme } from 'styled-components';
 import { Condition, If, Else } from '@glhrmoura/react-conditional';
 
 import { FileIcon } from '@/icons/File';
-import { ArrowIcon } from '@/icons/Arrow';
 import { FolderIcon } from '@/icons/Folder';
 
 import {
@@ -44,9 +43,7 @@ const Content = ({ item, name, repository, branch, level = 1, sub }: TreeProps) 
   };
 
   const containerStyle = {
-    paddingLeft: sub
-      ? `${(theme.spacing.base * level) + (isFile ? theme.spacing.lg : 0)}px`
-      : `${theme.spacing.mdl + (isFile ? theme.spacing.lg : 0)}px`,
+    paddingLeft: sub ? `${theme.spacing.lg * (level - 1)}px` : 0
   };
 
   return (
@@ -63,7 +60,6 @@ const Content = ({ item, name, repository, branch, level = 1, sub }: TreeProps) 
         <Else>
           <FolderContainer style={containerStyle} onClick={toggle}>
             <FolderHead>
-              <ArrowIcon size={18} dir={opened ? 'down' : 'right'} />
               <FolderIcon opened={opened} />
               <Name>{name}</Name>
             </FolderHead>
