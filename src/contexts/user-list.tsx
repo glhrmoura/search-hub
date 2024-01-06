@@ -15,15 +15,11 @@ interface UserListContextProps {
   setList: (arg: UserListItem[]) => void;
 }
 
-const UserListContext = createContext<UserListContextProps>({} as UserListContextProps);
-
-const useUserList = (): UserListContextProps => {
-  return useContext(UserListContext);
-};
-
 export interface UserListProviderProps {
   children: React.ReactNode;
 }
+
+const UserListContext = createContext<UserListContextProps>({} as UserListContextProps);
 
 const UserListProvider = ({ children }: UserListProviderProps): JSX.Element => {
   const [page, definePage] = useState<number>(0);
@@ -70,6 +66,10 @@ const UserListProvider = ({ children }: UserListProviderProps): JSX.Element => {
       {children}
     </UserListContext.Provider>
   );
+};
+
+const useUserList = (): UserListContextProps => {
+  return useContext(UserListContext);
 };
 
 export { useUserList, UserListProvider };

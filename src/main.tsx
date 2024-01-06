@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import { UserListProvider } from '@/hooks/user-list';
+import { UserListProvider } from '@/contexts/user-list';
 
 import { router } from '@/routes';
 

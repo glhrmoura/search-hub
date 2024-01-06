@@ -6,7 +6,7 @@ import { useTheme } from 'styled-components';
 import ResponsivePagination from 'react-responsive-pagination';
 import { Condition, If, Else } from '@glhrmoura/react-conditional';
 
-import { useUserList } from '@/hooks/user-list';
+import { useUserList } from '@/contexts/user-list';
 
 import { SearchIcon } from '@/icons/Search';
 
