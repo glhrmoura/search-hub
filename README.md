@@ -13,13 +13,6 @@ Discover users, explore profiles and projects in this intuitive search applicati
 
 [**Search Hub**](https://preeminent-kataifi-ed0e4c.netlify.app/)
 
-### Tools
-
-- React
-- TypeScript
-- React Router
-- Styled Components
-
 ### License
 
 [MIT](https://github.com/glhrmoura/search-hub/blob/master/LICENSE)
