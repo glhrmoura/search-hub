@@ -1,7 +1,7 @@
 <p align="center">
   <img
     style="object: contain; height: 150px"
-    src="https://cdn-icons-png.flaticon.com/512/3291/3291667.png"
+    src="https://i.imgur.com/3JlRk4o.png"
   >
 </p>
 
