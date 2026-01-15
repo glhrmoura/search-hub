@@ -11,7 +11,7 @@ Discover users, explore profiles and projects in this intuitive search applicati
 
 ### Demo
 
-[**Search Hub**](https://preeminent-kataifi-ed0e4c.netlify.app/)
+[**Search Hub**](https://glhrmoura-search-hub.netlify.app)
 
 ### License
 
